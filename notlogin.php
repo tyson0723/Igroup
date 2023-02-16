@@ -45,22 +45,27 @@ if(!empty($_POST["user"]) && !empty($_POST["pw"])){
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="./log.css">
     </head>
 <body>
-<div class="login">
-  <div class="login-triangle"></div>
-  
-  <h2 class="login-header">ログイン失敗</h2>
-
+<div class="form-wrapper">
+  <h1>ログイン失敗</h1>
   <form action="login.php" class="login-container" method="post">
-    <p><input name="user" type="text" placeholder="ユーザー名"></p>
-    <p><input name="pw" type="password" placeholder="パスワード"></p>
-    <p><input type="submit" value="戻る"></p>
-    <p><input type="submit" value="ログイン"></p>
-    <div style="text-align: center">
-    <a href="#">新規登録はこちら</a>
+    <div class="form-item">
+      <label for="text"></label>
+      <p><input name="user" type="text" placeholder="ユーザー名"></p>
+    </div>
+    <div class="form-item">
+      <label for="password"></label>
+      <p><input name="pw" type="password" placeholder="パスワード"></p>
+    </div>
+    <div class="button-panel">
+    <input type="button" class="button" onclick="location.href='index.php'" title="back" value="戻る"></input><br>
+      <input type="submit" class="button" title="Sign In" value="ログイン"></input>
     </div>
   </form>
+  <div class="form-footer">
+    <p><a href="#">新規登録はこちら</a></p>
+  </div>
 </div>
 </body>

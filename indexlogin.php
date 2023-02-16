@@ -11,10 +11,10 @@ session_start();
 <body>
     <div style="text-align: right" class="container">
     <a class="btn btn-border-1" href="menu.php">メニュー</a>
-    <a class="btn btn-border-1" href="login.php">ログアウト</a>
+    <a class="btn btn-border-1" href="index.php">ログアウト</a>
     </div>
     <div class="post-btn">
-    <a class="btn btn-border-1" href="menu.php">投稿</a>
+    <a class="btn btn-border-1" href=".php">投稿</a>
     </div>
     <h1 style="text-align: center">ジョビッター</h1>
     <table id-"ta" border="1" align="center">
