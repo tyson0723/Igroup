@@ -26,14 +26,15 @@ if(!empty($_POST["user"]) && !empty($_POST["pw"])){
       if($pw === $result["pw"]){
         //echo "ログイン成功";
         //index.phpにリダイレクトする
-        header('Location: ./indexlogin.php');
+        header('Location: ./menu.php');
         exit();
       }else{
         //echo "失敗";
-        header('Location: ./notlogin.php');
+        //header('Location: ./notlogin.php');
       }
     }else{
-      echo "いません";
+      //echo "いません";
+      header('Location: ./notlogin.php');
     }
 }else{
   //echo "入力エラーです";
@@ -50,7 +51,7 @@ if(!empty($_POST["user"]) && !empty($_POST["pw"])){
 <div class="login">
   <div class="login-triangle"></div>
   
-  <h2 class="login-header">ログイン</h2>
+  <h2 class="login-header">ログイン失敗</h2>
 
   <form action="login.php" class="login-container" method="post">
     <p><input name="user" type="text" placeholder="ユーザー名"></p>
