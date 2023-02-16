@@ -6,15 +6,17 @@ session_start();
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./indexlogin.css">
     </head>
 <body>
     <div style="text-align: right" class="container">
-    <a class="btn btn-border-1" href="login.php">ログイン</a>
+    <a class="btn btn-border-1" href="menu.php">メニュー</a>
+    <a class="btn btn-border-1" href="login.php">ログアウト</a>
     </div>
-        <p style="text-align: center">ジョビッターへようこそ！！</p>
-        <p style="text-align: center">ここでは以下のような自由な記事を閲覧、投稿できます。</p>
-        <p style="text-align: center">ログインするとさらに多くの記事が閲覧でき、自分で記事の投稿もできます。</p><br>
+    <div class="post-btn">
+    <a class="btn btn-border-1" href="menu.php">投稿</a>
+    </div>
+    <h1 style="text-align: center">ジョビッター</h1>
     <table id-"ta" border="1" align="center">
         <tr>
             <td>著者</td><td rowspan="2">タイトル</td>
