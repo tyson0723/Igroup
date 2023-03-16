@@ -13,7 +13,7 @@ session_start();
     <a class="btn btn-border-1" href="login.php">ログアウト</a>
     </div><br>
     <div style="text-align: center">
-    <a href="#" class="btn btn-border"><span>自分が投稿した記事一覧</span></a>
+    <a href="mypage.php" class="btn btn-border"><span>自分が投稿した記事一覧</span></a>
     </div><br>
     <div style="text-align: center">
     <a href="#" class="btn btn-border"><span>　ユーザー情報の編集　</span></a>
