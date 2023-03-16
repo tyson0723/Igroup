@@ -21,7 +21,7 @@ $stm->execute();
     <a class="btn btn-border-1" href="index.php">ログアウト</a>
     </div>
     <div class="post-btn">
-    <a class="btn btn-border-1" href=".php">投稿</a>
+    <a class="btn btn-border-1" href="toukou.php">投稿</a>
     </div>
     <h1 style="text-align: center">ジョビッター</h1>
     <form action="loginarticle.php" method="post">
