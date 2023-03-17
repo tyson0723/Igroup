@@ -2,10 +2,10 @@
 session_start();
 require_once 'db_connect.php';
 //公開記事の本文表示
-$articleid=$_POST['articletitle'];
-$sql="select articletitle,articlename,username,date from article where articletitle=:title";
+$articleid=$_GET['articleid'];
+$sql="select articletitle,articlename,username,date from article where articleid =:id ";
 $stm=$pdo->prepare($sql);//次に使うデータベースの予約
-$stm->bindValue(':title',$articleid,PDO::PARAM_INT);
+$stm->bindValue(':id', $articleid, PDO::PARAM_INT);
 $stm->execute();
   $result=$stm->fetchAll(PDO::FETCH_ASSOC);
 
