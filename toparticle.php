@@ -31,10 +31,10 @@ $stm->execute();
    echo "</thead></tr>";
        foreach($result as $row){
        echo "<tr>";
-            echo "<td>",$row['articletitle'],"</td>";
-         echo "<td>" ,$row['username'],"</td>";
-           echo "<td>",$row['date'],"</td>";
-           echo "<td>",$row['articlename'],"</td>";
+            echo "<td>",htmlspecialchars($row['articletitle']),"</td>";
+         echo "<td>" ,htmlspecialchars($row['username']),"</td>";
+           echo "<td>",htmlspecialchars($row['date']),"</td>";
+           echo "<td>",htmlspecialchars($row['articlename']),"</td>";
        echo "</tr>";
     }
     echo "</table>";

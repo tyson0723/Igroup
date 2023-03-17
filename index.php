@@ -31,9 +31,9 @@ $stm->execute();
    </thead></tr>
    <?php   foreach($result as $row) :?>
            <tr>
-           <td> <a href="toparticle.php?articleid=<?php echo $row['articleid'];?>"><?php echo $row['articletitle'];?></a></td>
-         <td> <?php echo $row['username'];?></td>
-           <td><?php echo $row['date'];?></td>
+           <td> <a href="toparticle.php?articleid=<?php echo htmlspecialchars($row['articleid']);?>"><?php echo $row['articletitle'];?></a></td>
+         <td> <?php echo htmlspecialchars($row['username']);?></td>
+           <td><?php echo htmlspecialchars($row['date']);?></td>
        </tr>
        <?php endforeach;?>
     </table>

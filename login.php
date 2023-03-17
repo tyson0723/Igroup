@@ -25,6 +25,7 @@ if(!empty($_POST["user"]) && !empty($_POST["pw"])){
       //入力されたpwとデータベースのpwが同じだったら
       if($pw === $result["pw"]){
         $_SESSION['userid']=$result['userid'];
+        $_SESSION['user']=$result['user'];
         //echo "ログイン成功";
         //index.phpにリダイレクトする
         header('Location: ./indexlogin.php');
