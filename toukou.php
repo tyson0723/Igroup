@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./toukou.css">
     </head>
 <body>
+    <h1>自由に投稿してください！</h1>
 <div style="text-align: right" class="container">
     <a class="btn btn-border-1" href="menu.php">メニュー</a>
     <a class="btn btn-border-1" href="index.php">ログアウト</a>
