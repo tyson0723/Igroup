@@ -71,3 +71,7 @@
 .btn.btn-border-1:hover::before {
     transition: width .1s ease, height .1s ease .1s;
 }
+
+.page {
+    padding: 10px 50px 20px;
+}

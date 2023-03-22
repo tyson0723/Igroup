@@ -69,6 +69,5 @@ for ( $n = 1; $n <= $pages; $n ++){
                 }
             }
             ?>
-
 </body>
 </html>
