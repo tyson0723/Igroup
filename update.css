@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.tou input {
+    font-size: 24px;
+}
+.tou textarea {
+    font-size: 24px;
+}
+.tou {
+    font-size: 24px;
+}
+.tou button {
+    font-size: 24px;
+}
+
+h1 {
+    color: #364e96;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+  }
