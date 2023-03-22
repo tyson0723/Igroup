@@ -13,6 +13,7 @@
 </body>
 <form action="insert.php" method="post">
     <!--<table border="1">-->
+        <div class="tou">
         <tr>
             <td><input type="text" name="articletitle" placeholder="タイトル"></td>
         </tr><br>
@@ -24,5 +25,6 @@
         <tr>
             <button onclick="location.href='insert.php'">投稿</button>
         </tr>
-    </table>
+        </div>
+    <!--</table>-->
 </form>
