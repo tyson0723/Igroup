@@ -16,7 +16,7 @@ $pages = ceil($total_count['count'] / max_view);
         $now = $_GET['page_id'];
     }
 
-$sql="select articleid,articletitle,username,date from article where deleteflag=0 and open=0 LIMIT :start,:max ";
+$sql="select articleid,articletitle,username,date from article where deleteflag=0 and open=0 LIMIT :start,:max";
 $stm=$pdo->prepare($sql);//次に使うデータベースの予約
 if ($now == 1){
     //1ページ目の処理
