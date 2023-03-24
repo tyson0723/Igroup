@@ -16,7 +16,7 @@ $pages = ceil($total_count['count'] / max_view);
         $now = $_GET['page_id'];
     }
 
-$sql="select articleid,articletitle,username,date from article where deleteflag=0 and open=0 LIMIT :start,:max ";
+$sql="select articleid,articletitle,username,date from article where deleteflag=0 and open=0 LIMIT :start,:max";
 $stm=$pdo->prepare($sql);//次に使うデータベースの予約
 if ($now == 1){
     //1ページ目の処理
@@ -59,15 +59,19 @@ $stm->execute();
        </tr>
        <?php endforeach;?>
     </table>
+    <div class="num">
     <?php
+    echo "<<"; 
 //ページネーションを表示
 for ( $n = 1; $n <= $pages; $n ++){
                 if ( $n == $now ){
-                    echo "<span style='padding: 5px;'>$now</span>";
+                    echo "<span >$now</span>";
                 }else{
                     echo "<a href='index.php?page_id=$n' style='padding: 5px;'>$n</a>";
                 }
             }
+            echo ">>"; 
             ?>
+            </div>
 </body>
 </html>

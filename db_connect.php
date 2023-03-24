@@ -23,7 +23,7 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     //echo "データベースに接続しました";
 } catch (Exception $e) {
-    //echo "DB接続エラー";
+    echo "DB接続エラー";
     //echo $e->getMessage();
     exit();
 }
