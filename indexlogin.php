@@ -60,15 +60,19 @@ $stm->execute();
        </tr>
        <?php endforeach;?>
     </table>
+    <div class="num">
     <?php
+    echo "<<";
 //ページネーションを表示
 for ( $n = 1; $n <= $pages; $n ++){
                 if ( $n == $now ){
-                    echo "<span style='padding: 5px;'>$now</span>";
+                    echo "<span>$now</span>";
                 }else{
                     echo "<a href='indexlogin.php?page_id=$n' style='padding: 5px;'>$n</a>";
                 }
             }
+            echo ">>"; 
             ?>
+            </div>
 </body>
 </html>
