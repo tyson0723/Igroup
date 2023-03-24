@@ -32,7 +32,7 @@ $result = $stm->fetchAll(PDO::FETCH_ASSOC);
     <?php foreach($result as $r) :?>
         <thead><tr>
         <th><a href="title.php?id=<?php echo $r['articleid'];?>"><?php echo $r['articletitle'];?></a></th><th><?php echo $r['date'];?></th>
-        <th><button onclick="location.href='update.php?articleid=<?php echo $r['articleid'];?>'">編集</button></th><br>
+        <th><button onclick="location.href='update.php?articleid=<?php echo $r['articleid'];?>'">編集</button></th>
     </thead></tr>
         <?php endforeach;?>
     </table>
